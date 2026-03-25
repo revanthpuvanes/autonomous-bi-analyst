@@ -113,7 +113,7 @@ The system follows a **multi-agent workflow**:
 ## ▶️ Run Locally
 
 ### 1. Clone repo
-git clone https://github.com/YOUR_USERNAME/autonomous-bi-analyst.git
+git clone https://github.com/revanthpuvanes/autonomous-bi-analyst.git
 cd autonomous-bi-analyst
 
 ### 2. Setup environment
