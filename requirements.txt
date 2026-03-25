@@ -2,3 +2,4 @@ mistralai==0.4.2
 python-dotenv
 pandas
 matplotlib
+streamlit

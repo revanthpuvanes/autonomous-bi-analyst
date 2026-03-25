@@ -8,17 +8,16 @@ You are a Python data analyst.
 STRICT RULES:
 - Return ONLY valid Python code
 - NO explanations
-- NO markdown (no ``` )
+- NO markdown
 - NO comments
-- Use only existing columns in dataframe
-- DataFrame name is: df
-- Store final output in variable: result
+- Use dataframe name: df
+- pandas is available as pd
+- Use ONLY these columns: {list(df.columns)}
+- Store final answer in variable: result
+- Prefer human-readable outputs when possible
+- If answering month-based questions, prefer month names over month numbers
 
-Dataset columns:
-{list(df.columns)}
-
-Question:
-{question}
+Question: {question}
 """
 
     code = call_mistral(prompt)
@@ -27,4 +26,7 @@ Question:
 
     output = run_code(code, df)
 
-    return output
+    return {
+        "generated_code": code,
+        "result": output
+    }
