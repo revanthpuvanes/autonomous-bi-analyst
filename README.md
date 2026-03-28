@@ -97,44 +97,35 @@ The system follows a **multi-agent workflow**:
 ## ▶️ Run Locally
 
 ### 1. Clone repo
-
----
-
-## 🧰 Tech Stack
-
-- Python
-- Pandas
-- Matplotlib
-- Streamlit
-- Mistral AI (LLM)
-
----
-
-## ▶️ Run Locally
-
-### 1. Clone repo
+```
 git clone https://github.com/revanthpuvanes/autonomous-bi-analyst.git
 cd autonomous-bi-analyst
+```
 
 ### 2. Setup environment
+```
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
 ### 3. Add API key
 Create `.env` file:
+```
 MISTRAL_API_KEY=your_api_key_here
-
+```
 ---
 
 ## 🖥️ Run CLI version
+```
 python -m app.main
-
+```
 ---
 
 ## 🌐 Run Streamlit App
+```
 streamlit run app/streamlit_app.py
-
+```
 ---
 
 ## 📊 Features
